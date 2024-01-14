@@ -1,0 +1,30 @@
+{%extends 'bs.html'%}
+
+{%block title%}
+главная страница
+{%endblock%}
+
+{%block content%}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Цены</h1>
+</div>
+
+<div class="conteiner">
+  {%for c in courses%}
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">{{c.title}}</h4>
+      </div>
+      <div class="card-body">
+        <div class="list-text">
+          <p>{{c.text}}</p>
+        </div>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Купить</button>
+      </div>
+    </div>
+    {%endfor%}
+    </div>
+</div>
+{%endblock%}

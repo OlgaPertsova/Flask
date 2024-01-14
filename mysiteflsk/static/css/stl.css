@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    align-items: center;
+}
+.conteiner{
+    justify-content: space-around;
+    list-style: none;
+    background: rgb(253, 253, 253);
+    padding: 0 px;
+    margin-top: 0%;
+}
+.card-deck{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 0%;
+    text-align: center;
+   
+}
+.pricing-header{
+    text-align: center;
+    padding: 20px;
+}
+.card-header{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(12, 25, 49);
+    color: #f9f9f9;
+}
+.flash{
+    padding: 10px;
+}
+.flash.success{
+    border: 1 px solid #21DB56;
+    background: #AEFFC5;
+}
+.flash.error{
+    border: 1px solid #992d56;
+    background: #7d4d60;
+}

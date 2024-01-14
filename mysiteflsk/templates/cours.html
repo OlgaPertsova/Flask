@@ -1,0 +1,21 @@
+{%extends 'bs.html'%}
+
+{%block title%}
+страница
+{%endblock%}
+
+{%block content%}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Добавить курс</h1>
+</div>
+{%for cat, msg in get_flashed_messages(True)%}
+<div class="flash {{cat}}">{{msg}}</div>
+{%endfor%}
+<form action="{{url_for('cours')}}" method="post">
+    <p>Название курса: <input type="text" name="name" required></p>
+    <p>URL: <input type="text" name="url" required></p>
+    <p>Цена и описание курса</p>
+    <p><textarea name="cours" cols="40" rows="10"></textarea></p>
+    <p><input type="submit" value="Добавить курс"></p>
+</form>
+{%endblock%}
